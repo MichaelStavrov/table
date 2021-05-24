@@ -1,0 +1,32 @@
+.button {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--btn-bg-color) ;
+  color: var(--btn-color);
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--btn-hover-color);
+  transition: all .2s ease-in-out;
+}
+
+.button:active {
+  background: var(--btn-bg-color);
+}
+
+.buttonDisabled, .buttonDisabled:hover, .buttonDisabled:active {
+  background-color: var(--btn-disabled-bg-color);
+  color: var(--btn-disabled-color)
+}
+
+

@@ -1,0 +1,31 @@
+.paginator {
+  display: flex;
+  align-items: center;
+}
+
+.numbers {
+  margin: 0 10px; 
+}
+
+.page {
+  display: inline-block;
+  min-width: 20px;
+  margin-right: 3px;
+  text-align: center;
+  color: rgb(47, 47, 207);
+  cursor: pointer;
+}
+
+.page:last-child {
+  margin: 0;
+}
+
+.page:hover {
+  text-decoration: underline;
+
+}
+
+.currentPage {
+  font-weight: 700;
+  color: #000000;
+}

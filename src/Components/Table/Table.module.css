@@ -1,0 +1,38 @@
+
+.row {
+  cursor: pointer;
+}
+
+.cell {
+  min-width: 120px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.thCell {
+  position: relative;
+}
+
+.thCell::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.thCellAsc::after {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.thCellDesc::after {
+  top: 20px;
+  transform: rotate(225deg);
+  transition: all 0.2s ease-in-out;
+}
